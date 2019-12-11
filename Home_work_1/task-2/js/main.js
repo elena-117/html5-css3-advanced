@@ -11,6 +11,7 @@ function init() {
 
 }
 
+// Запуск модального окна
 function openPopap() {
    let linksElem = document.getElementsByClassName('hotel-card-map');
 
@@ -66,6 +67,7 @@ function openPopap() {
    }
 }
 
+// Создание google карты
 function initMap() {
    let opt = {
       center: posMap,
@@ -84,6 +86,7 @@ function initMap() {
    });
 }
 
+// Закрытие модального окна с помощью ESC или при нажатии вне карты
 function closePopap() {
    document.addEventListener('mouseup', function (e) {
       if (e.target === popap) {
