@@ -110,6 +110,10 @@ body {
   margin-bottom: 10px;
 }
 
+.main .hotel-card-btn:hover {
+  transform: rotate(5deg);
+}
+
 .main .hotel-card-map {
   display: inline-block;
   margin-bottom: 20px;
