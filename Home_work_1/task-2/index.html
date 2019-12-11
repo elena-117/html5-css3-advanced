@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Урок 1. Микроданные, геолокация</title>
+   <script src="https://kit.fontawesome.com/074d79e919.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- Задание 2
+   Создайте страницу ТурФирмы. Основные элементы – header, footer, section, nav. В элементе section – минимум 4 блока с ТОПовыми отелями. В блоке есть фото и информация про отель. Снизу под описанием – кнопка – «Посмотреть на карте». При нажатии на кнопку – появляется карта с расположением данного отеля. -->
+
+   <header class="header">
+      <div class="container">
+         <div class="block">
+            <div class="header-logo">
+               <a href="#"><img src="img/header/header-logo.png" alt="header-logo"></a>
+            </div>
+
+            <div class="header-contacts">
+               <span class="header-contacts-tel">+31-20-5313300</span>
+               <span class="header-contacts-text">FREE CALL</span>
+            </div>
+         </div>
+
+         <nav class="header-menu">
+            <div class="block">
+               <a href="#">Home</a>
+               <a href="#">Accomodation</a>
+               <a href="#">About us</a>
+               <a href="#">Gallery</a>
+               <a href="#">News</a>
+               <a href="#">Contact us</a>
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="hotels-cards">
+         <div class="container">
+            <div class="block block-advantages">
+               <div class="main-advantages">
+                  <img src="img/main/check.png" alt="check">
+                  <span>No booking fees</span>
+               </div>
+               <div class="main-advantages">
+                  <img src="img/main/check.png" alt="check">
+                  <span>No cancelation fees</span>
+
+               </div>
+               <div class="main-advantages">
+                  <img src="img/main/check.png" alt="check">
+                  <span>Secure online booking</span>
+
+               </div>
+               <div class="main-advantages">
+                  <img src="img/main/check.png" alt="check">
+                  <span>Instant emailconfirmation</span>
+               </div>
+            </div>
+
+            <div class="block">
+               <div class="hotel-card hotel-card-1">
+                  <h4 class="hotel-card-title">Scenic Hotel Auckland</h4>
+                  <img src="img/main/hotels-cards/hotel-1.png" alt="hotel-1">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-1" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+               <div class="hotel-card hotel-card-2">
+                  <h4 class="hotel-card-title">Mercure Hotel</h4>
+                  <img src="img/main/hotels-cards/hotel-2.png" alt="hotel-2">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-2" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+
+               <div class="hotel-card hotel-card-3">
+                  <h4 class="hotel-card-title">Best Western Ellersli...</h4>
+                  <img src="img/main/hotels-cards/hotel-3.png" alt="hotel-3">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-3" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+               <div class="hotel-card hotel-card-4">
+                  <h4 class="hotel-card-title">Hotel Grand Windsor</h4>
+                  <img src="img/main/hotels-cards/hotel-4.png" alt="hotel-4">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-4" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+            </div>
+
+            <div class="block">
+               <div class="hotel-card hotel-card-1">
+                  <h4 class="hotel-card-title">Scenic Hotel Auckland</h4>
+                  <img src="img/main/hotels-cards/hotel-1.png" alt="hotel-1">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-1" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+               <div class="hotel-card hotel-card-2">
+                  <h4 class="hotel-card-title">Mercure Hotel</h4>
+                  <img src="img/main/hotels-cards/hotel-2.png" alt="hotel-2">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-2" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+
+               <div class="hotel-card hotel-card-3">
+                  <h4 class="hotel-card-title">Best Western Ellersli...</h4>
+                  <img src="img/main/hotels-cards/hotel-3.png" alt="hotel-3">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-3" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+               <div class="hotel-card hotel-card-4">
+                  <h4 class="hotel-card-title">Hotel Grand Windsor</h4>
+                  <img src="img/main/hotels-cards/hotel-4.png" alt="hotel-4">
+                  <p class="hotel-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+                     molestias?</p>
+                  <a class="hotel-card-btn" href="#"><img src="img/main/hotels-cards/button-book-it.png" alt=""></a>
+                  <a class="hotel-card-map" data-name="hotel-4" href="#">Show on map <i
+                        class="fas fa-map-marker-alt"></i></a>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div id="popap" class="popap hidden">
+
+         <div id="map" class="map"></div>
+
+      </div>
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="block">
+
+            <div class="footer-item">
+               <p><a href="#">About Us</a></p>
+               <p><a href="#">Privacy and Cookies</a></p>
+               <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div class="footer-item">
+               <p><a href="#">Facebook</a></p>
+               <p><a href="#">Help and FAQ</a></p>
+               <p><a href="#">Customer Service</a></p>
+            </div>
+            <div class="footer-item">
+               <p><a href="#">My Booking</a></p>
+               <p><a href="#">Add your Hotel</a></p>
+               <p>
+                  <aSite href="#">Site Map</a>
+               </p>
+            </div>
+            <div class="footer-item">
+               <span>Hotel reviews powered by</span><img src="img/footer/TripAdvisor-logo.png" alt="TripAdvisor-logo">
+            </div>
+         </div>
+
+         <div class="block">
+            <span class="footer-copyrights">2013&#32; &#169;&#32; Hotelbooking.com</span>
+            <div class="footer-social">
+               <a href="#"><img src="img/footer/social/facebook.png" alt="Facebook"></a>
+               <a href="#"><img src="img/footer/social/twitter.png" alt="Twitter"></a>
+               <a href="#"><img src="img/footer/social/googleplus.png" alt="Google"></a>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+
+
+   <script src="js/main.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBlGM8N5mHu4cx0J6HYMNiBWKpMW6MAQg&callback=initMap"
+      async defer></script>
+
+
+</body>
+
+</html>

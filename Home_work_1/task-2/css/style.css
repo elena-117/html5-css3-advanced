@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400i,500,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #58585a;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-image: url(../img/header/header-background.png);
+  background-repeat: repeat;
+  -webkit-box-shadow: inset 0px -8px 0px 0px rgba(88, 88, 90, 0.1);
+  -moz-box-shadow: inset 0px -8px 0px 0px rgba(88, 88, 90, 0.1);
+  box-shadow: inset 0px -8px 0px 0px rgba(88, 88, 90, 0.1);
+}
+
+.header-logo {
+  margin-top: 15px;
+}
+
+.header-contacts {
+  margin-top: 35px;
+  font-size: 22px;
+}
+
+.header-contacts-text {
+  margin-left: 15px;
+  color: #f58220;
+}
+
+.header-menu {
+  margin-top: 30px;
+  padding-bottom: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header-menu .block {
+  justify-content: center;
+}
+
+.header-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #58585a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.header-menu a:hover {
+  color: #f58220;
+  text-decoration: underline;
+}
+
+.main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url(../img/main/main-background.png);
+  background-repeat: repeat;
+}
+
+.main .block {
+  justify-content: space-around;
+}
+
+.block-advantages {
+  margin-bottom: 30px;
+}
+
+.main .hotel-card {
+  background-color: #fff;
+  width: 240px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 0.65);
+  -moz-box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 0.65);
+  box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 0.65);
+}
+
+.main .hotel-card:hover {
+  -webkit-box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 1);
+  -moz-box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 1);
+  box-shadow: 0px 0px 15px -2px rgba(88, 88, 90, 1);
+}
+
+.main .hotel-card-description {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.main .hotel-card-btn {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.main .hotel-card-map {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #58585a;
+  font-size: 12px;
+}
+
+.main .hotel-card-map:hover {
+  /* text-decoration: underline; */
+  color: #ea4335;
+}
+
+.main .hotel-card-map i {
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Модальное окно */
+
+.main .popap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(102, 102, 102, 0.5);
+}
+
+.main .map {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 12rem;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url(../img/footer/footer-background.png);
+  background-repeat: repeat;
+  height: 420px;
+  -webkit-box-shadow: inset 0px 8px 0px 0px rgba(88, 88, 90, 0.1);
+  -moz-box-shadow: inset 0px 8px 0px 0px rgba(88, 88, 90, 0.1);
+  box-shadow: inset 0px 8px 0px 0px rgba(88, 88, 90, 0.1);
+}
+
+.footer-item {
+  margin-top: 20px;
+}
+
+.footer-item a {
+  text-decoration: none;
+  color: #58585a;
+}
+
+.footer-item:last-child {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.footer-item:last-child span {
+  margin-right: 10px;
+}
+
+.footer .footer-copyrights,
+.footer-social {
+  margin-top: 240px;
+}
+
+.footer-social a {
+  margin-left: 4px;
+}
