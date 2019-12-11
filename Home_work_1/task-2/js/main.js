@@ -90,4 +90,11 @@ function closePopap() {
          popap.style.display = 'none';
       }
    })
+
+   document.addEventListener("keydown", function (e) {
+      if (e.keyCode == 27) {
+         popap.style.display = 'none';
+      }
+   }, true);
+
 }
