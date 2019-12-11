@@ -23,7 +23,7 @@ function openPopap() {
                   lat: -42.575112,
                   lng: 171.479091,
                };
-               info = new google.maps.InfoWindow({
+               infoMap = new google.maps.InfoWindow({
                   content: '<h3>Scenic Hotel Auckland</h3>'
                });
                initMap();
@@ -34,7 +34,7 @@ function openPopap() {
                   lat: -41.280003,
                   lng: 174.780502,
                };
-               info = new google.maps.InfoWindow({
+               infoMap = new google.maps.InfoWindow({
                   content: '<h3>Mercure Hotel</h3>'
                });
                initMap();
@@ -45,7 +45,7 @@ function openPopap() {
                   lat: -38.845718,
                   lng: 174.767440,
                };
-               info = new google.maps.InfoWindow({
+               infoMap = new google.maps.InfoWindow({
                   content: '<h3>Best Western Ellersli...</h3>'
                });
                initMap();
@@ -56,7 +56,7 @@ function openPopap() {
                   lat: -36.841971,
                   lng: 174.750537,
                };
-               info = new google.maps.InfoWindow({
+               infoMap = new google.maps.InfoWindow({
                   content: '<h3>Hotel Grand Windsor</h3>'
                });
                initMap();
@@ -82,7 +82,7 @@ function initMap() {
    });
 
    marker.addListener('click', function () {
-      info.open(map, marker);
+      infoMap.open(map, marker);
    });
 }
 
