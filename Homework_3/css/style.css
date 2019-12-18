@@ -1,0 +1,79 @@
+body {
+   background-color: #24292E;
+}
+
+.player {
+   position: absolute;
+   background-color: darkslategray;
+   top: 100px;
+   left: 320px;
+   width: auto;
+   height: auto;
+}
+
+.video {
+   position: relative;
+   width: 1000px;
+   height: 650px;
+}
+
+.video::-webkit-media-controls {
+   display: none !important;
+}
+
+.controls {
+   position: relative;
+   width: auto;
+   border: 2px solid darkcyan;
+   height: 40px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   background-color: #d6e5e5;
+}
+
+.controls .maximizeBtnDiv {
+   float: right;
+   margin-right: 5px;
+}
+
+.controlsImg {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   user-select: none;
+   text-align: center;
+   float: left;
+   margin-left: 5px;
+}
+
+.controlsImg.volumeUpBtn {
+   margin-right: 10px;
+}
+
+.curTimeText {
+   display: inline-block;
+   margin-top: 12px;
+   font-style: italic;
+}
+
+.block {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 140px;
+   margin-right: 60px;
+}
+
+.block .vSrcLink {
+   color: #ffffff;
+}
+
+.block .vSrcLink a {
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 20px;
+   color: #ffffff;
+}
+
+.block .vSrcLink a:hover {
+   color: darkcyan;
+}
