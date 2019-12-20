@@ -209,7 +209,7 @@ body {
       background-color: #95D14A;
    }
 
-   a:hover {
+   .header-menu-2 a:hover {
       background-color: hsl(100, 50%, 45%);
    }
 
