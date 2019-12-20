@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Урок 4. Принципы построения разметки Flex, Grid. Шаблоны сайтов. Задание 2</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- Задание 2 Выполните макет страницы с img01.jpeg используя CSS3 Grid модель. Видоизмените страницу под формат спортивных новостей. Используйте медиа запросы и шаблоны для адаптивной верстки. (При уменьшении экрана – новости должны выстраиваться в колонку, текст прятаться – и оставаться только картинка с кнопкой на ссылку). -->
+
+
+   <div class="block">
+      <header class="header">
+         <div class="block-header-inner">
+            <div class="header-logo">
+               <a href="#">Sport News</a>
+            </div>
+
+            <nav class="header-menu">
+               <a href="#">Home</a>
+               <a href="#">Football</a>
+               <a href="#">Formula 1</a>
+               <a href="#">Cricket</a>
+               <a href="#">Rugby</a>
+               <a href="#">Tennis</a>
+               <a href="#">Golf</a>
+            </nav>
+
+            <!-- Меню "гамбургер" -->
+            <div class="wrapper">
+               <input type="checkbox" id="check-menu">
+               <label for="check-menu">MENU</label>
+               <div class="burger-line first"></div>
+               <div class="burger-line second"></div>
+               <div class="burger-line third"></div>
+               <div class="burger-line fourth"></div>
+               <nav class="header-menu-2">
+                  <a href="#">Home</a>
+                  <a href="#">Football</a>
+                  <a href="#">Formula 1</a>
+                  <a href="#">Cricket</a>
+                  <a href="#">Rugby</a>
+                  <a href="#">Tennis</a>
+                  <a href="#">Golf</a>
+               </nav>
+            </div>
+            <!-- /.wrapper -->
+         </div>
+      </header>
+   </div>
+
+   <div class="block">
+      <main class="main">
+         <section class="main-article">
+            <div class="main-article-img">
+               <img src="img/main/img-article.jpg" alt="main-img">
+            </div>
+            <div class="main-article-text">
+               <h3 class="main-article-title">
+                  Cycling in Australia at risk of fracturing amid claims of ‘open and robust dialogue’
+               </h3>
+               <p>
+                  AusCycling was intended to bring together the fragmented sport. Instead, it has led to name-calling,
+                  social media spats and boardroom stoushes and, as the Olympics approach, the ongoing governance of
+                  cycling in Australia hangs in the balance. There is a real risk that, far from bringing together
+                  Australian cycling, AusCycling could tear it apart.
+               </p>
+               <p>
+                  The initiative, led by Cycling Australia, Mountain Bike Australia and BMX Australia, proposed merging
+                  the
+                  three national sporting organisations (NSOs) and their state/territory constituents into a unified
+                  body.
+                  The proposal, its supporters argued, would lead to better outcomes for members, millions of dollars in
+                  annual savings for reinvestment and a brighter future for the sport across all disciplines. With the
+                  support of federal agency Sport Australia, and the promise of a $2.5m cash injection, the three NSOs
+                  put
+                  the vote to their members.
+               </p>
+               <p>
+                  Only MTBA has unequivocally endorsed the reform, with 89% of their individual members voting in
+                  favour.
+                  Unlike the other cycling NSOs, MTBA does not have a federated structure. CA and BMXA faced a tougher
+                  task: each needed six out of their eight constituent bodies to approve the proposal, with each
+                  constituent body in turn requiring a 75% positive vote from member clubs. New South Wales and Western
+                  Australia voted down the proposal across both sports, as did Cycling Tasmania and BMX Victoria.
+               </p>
+            </div>
+         </section>
+
+         <section class="main-news">
+            <h3 class="main-news-title">News</h3>
+            <div class="main-news-item-block">
+               <div class="main-news-item">
+                  <img src="img/main/img-news-1.jpg" alt="img-news">
+                  <a href="#">
+                     <h4 class="main-news-item-title">Get Inspired: How to get into cricket</h4
+                        class="main-news-item-title">
+                  </a>
+                  <span class="main-news-item-date">18 December 2019</span class="main-news-item-date">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum vero eaque minima dolor.
+                     Rerum, deserunt voluptatibus. Ex est possimus accusantium quisquam veritatis porro, nostrum
+                     mollitia
+                     consequatur consectetur adipisci hic repellendus. Voluptate assumenda distinctio hic, ex
+                     perspiciatis
+                     architecto quo expedita.</p>
+                  <a href="#">read more...</a>
+               </div>
+               <!-- /.main-news-item -->
+               <div class="main-news-item">
+                  <img src="img/main/img-news-2.jpg" alt="img-news">
+                  <a href="#">
+                     <h4 class="main-news-item-title">'I felt like a failure' - Belfast cyclist on walking away from
+                        professional sport</h4>
+                  </a>
+                  <span class="main-news-item-date">18 December 2019</span>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum vero eaque minima dolor.
+                     Rerum, deserunt voluptatibus. Ex est possimus accusantium quisquam veritatis porro, nostrum
+                     mollitia
+                     consequatur consectetur adipisci hic repellendus. Voluptate assumenda distinctio hic, ex
+                     perspiciatis
+                     architecto quo expedita.</p>
+                  <a href="#">read more...</a>
+               </div>
+               <!-- /.main-news-item -->
+               <div class="main-news-item">
+                  <img src="img/main/img-news-3.jpg" alt="img-news">
+                  <a href="#">
+                     <h4 class="main-news-item-title">Cristiano Ronaldo: Juventus forward defies gravity with jump</h4>
+                  </a>
+                  <span class="main-news-item-date">19 December 2019</span>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum vero eaque minima dolor.
+                     Rerum, deserunt voluptatibus. Ex est possimus accusantium quisquam veritatis porro, nostrum
+                     mollitia
+                     consequatur consectetur adipisci hic repellendus. Voluptate assumenda distinctio hic, ex
+                     perspiciatis
+                     architecto quo expedita.</p>
+                  <a href="#">read more...</a>
+               </div>
+               <!-- /.main-news-item -->
+               <div class="main-news-item">
+                  <img src="img/main/img-news-4.jpg" alt="img-news">
+                  <a href="#">
+                     <h4 class="main-news-item-title">Premier League's iconic player of the decade: Who is yours?</h4>
+                  </a>
+                  <span class="main-news-item-date">20 December 2019</span>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptatum vero eaque minima dolor.
+                     Rerum, deserunt voluptatibus. Ex est possimus accusantium quisquam veritatis porro, nostrum
+                     mollitia
+                     consequatur consectetur adipisci hic repellendus. Voluptate assumenda distinctio hic, ex
+                     perspiciatis
+                     architecto quo expedita.</p>
+                  <a href="#">read more...</a href="#">
+               </div>
+               <!-- /.main-news-item -->
+            </div>
+         </section>
+      </main>
+   </div>
+
+</body>
+
+</html>
