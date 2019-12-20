@@ -120,9 +120,13 @@ function init() {
   v.addEventListener(
     "timeupdate",
     () => {
-      curTimeText.innerHTML = `${parseInt(v.currentTime)} / ${parseInt(
-        v.duration
-      )}`;
+      if (v.duration) {
+        curTimeText.innerHTML = `${parseInt(v.currentTime)} / ${parseInt(
+          v.duration
+        )}`;
+      } else {
+        curTimeText.innerHTML = `${parseInt(v.currentTime)} / -/-`;
+      }
 
       getTime = parseFloat(v.currentTime);
 
