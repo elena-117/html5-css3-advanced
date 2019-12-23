@@ -1,0 +1,183 @@
+body {
+   margin: 0;
+   background-color: #55565A;
+   display: flex;
+   justify-content: center;
+}
+
+.map {
+   position: absolute;
+   background-image: url(../img/map2.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1800px;
+   height: 1121px;
+}
+
+.point {
+   position: relative;
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   display: inline-block;
+   animation: pulseColor 1.5s ease infinite both;
+}
+
+@keyframes pulseColor {
+   from {
+      background-color: red;
+   }
+
+   50% {
+      background-color: darkred;
+   }
+
+   to {
+      background-color: red;
+   }
+}
+
+.point:hover {
+   animation-play-state: paused;
+}
+
+.point::before {
+   position: absolute;
+   top: -24px;
+   right: 3px;
+   content: "Купить билеты \f072";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   font-size: 14px;
+   color: #ffffff;
+   background-color: rgba(5, 4, 4, 0.7);
+   display: none;
+   width: 120px;
+   height: 24px;
+   text-align: center;
+   padding: 0 4px;
+   padding-top: 8px;
+   border-radius: 2px;
+   z-index: 99;
+}
+
+.point:hover::before {
+   display: inline-block;
+}
+
+.paris {
+   top: 405px;
+   left: 855px;
+}
+
+.paris::after {
+   content: "Paris";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.london {
+   top: 380px;
+   left: 825px;
+}
+
+.london::after {
+   content: "London";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.brasilia {
+   top: 750px;
+   left: 580px;
+}
+
+.brasilia::after {
+   content: "Brasilia";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.roma {
+   top: 445px;
+   left: 865px;
+}
+
+.roma::after {
+   content: "Roma";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.kyiv {
+   top: 390px;
+   left: 920px;
+}
+
+.kyiv::after {
+   content: "Kyiv";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.berlin {
+   top: 375px;
+   left: 830px;
+}
+
+.berlin::after {
+   content: "Berlin";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.ottawa {
+   top: 410px;
+   left: 410px;
+}
+
+.ottawa::after {
+   content: "Ottawa";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.washington {
+   top: 470px;
+   left: 370px;
+}
+
+.washington::after {
+   content: "Washington";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.moscow {
+   top: 340px;
+   left: 890px;
+}
+
+.moscow::after {
+   content: "Moscow";
+   position: absolute;
+   top: 6px;
+   left: 10px;
+}
+
+.info {
+   background-color: #fff;
+   width: 80px;
+   padding: 4px;
+   border-radius: 4px;
+   user-select: none;
+}
