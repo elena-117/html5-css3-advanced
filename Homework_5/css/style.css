@@ -70,6 +70,13 @@ body {
    display: inline-block;
 }
 
+.point::after {
+   position: absolute;
+   top: 6px;
+   left: 10px;
+   cursor: default;
+}
+
 .paris {
    top: 405px;
    left: 855px;
@@ -77,10 +84,6 @@ body {
 
 .paris::after {
    content: "Paris";
-   position: absolute;
-   top: 6px;
-   left: 10px;
-   cursor: default;
 }
 
 .london {
@@ -90,9 +93,6 @@ body {
 
 .london::after {
    content: "London";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .brasilia {
@@ -102,9 +102,6 @@ body {
 
 .brasilia::after {
    content: "Brasilia";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .roma {
@@ -114,9 +111,6 @@ body {
 
 .roma::after {
    content: "Roma";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .kyiv {
@@ -126,9 +120,6 @@ body {
 
 .kyiv::after {
    content: "Kyiv";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .berlin {
@@ -138,9 +129,6 @@ body {
 
 .berlin::after {
    content: "Berlin";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .ottawa {
@@ -150,9 +138,6 @@ body {
 
 .ottawa::after {
    content: "Ottawa";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .washington {
@@ -162,9 +147,6 @@ body {
 
 .washington::after {
    content: "Washington";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .moscow {
@@ -174,9 +156,6 @@ body {
 
 .moscow::after {
    content: "Moscow";
-   position: absolute;
-   top: 6px;
-   left: 10px;
 }
 
 .info {
