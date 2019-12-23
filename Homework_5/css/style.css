@@ -15,6 +15,10 @@ body {
    height: 1121px;
 }
 
+.map a:visited {
+   color: inherit;
+}
+
 .point {
    position: relative;
    border-radius: 50%;
@@ -76,6 +80,7 @@ body {
    position: absolute;
    top: 6px;
    left: 10px;
+   cursor: default;
 }
 
 .london {
