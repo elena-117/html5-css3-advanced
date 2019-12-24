@@ -271,8 +271,22 @@ body {
       grid-template-columns: repeat(2, 1fr);
    }
 
-   .main-news-item img {
+   .main-news-item {
       width: 80%;
    }
 
+   .main-news-item img {
+      width: 100%;
+   }
+}
+
+@media (max-width: 798px) {
+   .main-news-item-block {
+      grid-template-columns: 1fr;
+   }
+
+   .main-news-item {
+      justify-self: center;
+      margin-bottom: 40px;
+   }
 }
