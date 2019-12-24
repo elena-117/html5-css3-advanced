@@ -10,37 +10,42 @@
 <body>
    <!-- Добавьте на страницу окно для просмотра видео и кнопки: - остановить, - продолжить просмотр, - вперед на 10с, - назад на 10 с, - увеличить громкость, - уменьшить громкость. Также добавьте на страницу 3 кнопки с ссылками на видеофайлы. При нажатии на выбранный ролик, в окне начинается просмотр выбранного пользователем. После перезагрузки страницы, видео должно загрузиться, и пользователь может продолжить просмотр (который был до перезагрузки). Используйте сохранение информации в хранилище. -->
 
-   <div class="player">
-      <video class="video" id="video">
-         <source class="vSrc1" type="video/mp4">
-         <source class="vSrc2" type="video/ogg">
-         <source class="vSrc3" type="video/webm">
-      </video>
+   <div class="wrapper">
+      <div class="player">
+         <video class="video" id="video">
+            <source class="vSrc1" type="video/mp4">
+            <source class="vSrc2" type="video/ogg">
+            <source class="vSrc3" type="video/webm">
+         </video>
 
-      <div class="controls">
-         <div><img class="controlsImg playBtn" src="img/controls/play.png" title="Воспроизведение"></div>
-         <div><img class="controlsImg stopBtn" src="img/controls/stop.png" title="Стоп"></div>
-         <div><img class="controlsImg backwardBtn" src="img/controls/backward.png" title="Перемотка назад на 10с"></div>
-         <div><img class="controlsImg forwardsBtn" src="img/controls/forwards.png" title="Перемотка вперед на 10с">
+         <div class="controls">
+            <div><img class="controlsImg playBtn" src="img/controls/play.png" title="Воспроизведение"></div>
+            <div><img class="controlsImg stopBtn" src="img/controls/stop.png" title="Стоп"></div>
+            <div><img class="controlsImg backwardBtn" src="img/controls/backward.png" title="Перемотка назад на 10с">
+            </div>
+            <div><img class="controlsImg forwardsBtn" src="img/controls/forwards.png" title="Перемотка вперед на 10с">
+            </div>
+            <div><img class="controlsImg reduceVolumeBtn" src="img/controls/reduce-volume.png"
+                  title="Уменьшить громкость">
+            </div>
+            <div><img class="controlsImg volumeUpBtn" src="img/controls/volume-up.png" title="Увеличить громкость">
+            </div>
+            <span class="curTimeText"></span>
+            <div class="maximizeBtnDiv"><img class="controlsImg maximizeBtn" src="img/controls/maximize.png"
+                  title="На весь экран"></div>
          </div>
-         <div><img class="controlsImg reduceVolumeBtn" src="img/controls/reduce-volume.png" title="Уменьшить громкость">
-         </div>
-         <div><img class="controlsImg volumeUpBtn" src="img/controls/volume-up.png" title="Увеличить громкость"></div>
-         <span class="curTimeText"></span>
-         <div class="maximizeBtnDiv"><img class="controlsImg maximizeBtn" src="img/controls/maximize.png"
-               title="На весь экран"></div>
       </div>
-   </div>
 
-   <div class="block">
-      <ul>
-         <li class="vSrcLink">
-            <a href="#!">If the Moon were replaced with some of our planets</a>
-         </li>
-         <li class="vSrcLink">
-            <a href="#!">Puss in Boots: The Three Diablos</a>
-         </li>
-      </ul>
+      <div class="block-links">
+         <ul>
+            <li class="vSrcLink">
+               <a href="#!">If the Moon were replaced with some of our planets</a>
+            </li>
+            <li class="vSrcLink">
+               <a href="#!">Puss in Boots: The Three Diablos</a>
+            </li>
+         </ul>
+      </div>
    </div>
 
 
