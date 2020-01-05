@@ -1,0 +1,87 @@
+.section-blog h1 {
+  margin: {
+    top: $size-main * 4;
+    bottom: $size-main * 4;
+  }
+
+  color: $color-gray;
+  font-size: 3em;
+  font-family: $font-main;
+}
+
+.blog {
+  &-main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $size-main * 2;
+    font-family: $font-second;
+  }
+
+  &-item {
+    background-color: lighten($color-gray, 25%);
+    text-decoration: none;
+    grid-template-rows: repeat(2, 1fr);
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    color: $color-gray;
+
+    &:hover {
+      background-color: lighten($color-gray, 15%);
+    }
+
+    &-img {
+      height: $size-width * 2.5 + px;
+      background-size: cover;
+      background-position: $position;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(1.1) translateY(-12px);
+      }
+    }
+    &-content {
+      padding: $size-main * 2;
+      text-align: $position;
+      align-content: $position;
+
+      h4 {
+        font-size: $size-main * 2;
+        line-height: 1.5;
+        margin: $size-zero;
+      }
+
+      p {
+        margin: {
+          top: $size-main * 2;
+          bottom: $size-zero;
+        }
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 3/5;
+    }
+    &:nth-child(4) {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.frame {
+  position: relative;
+  display: block;
+  width: $size-width + 1%;
+  padding: $size-zero;
+  overflow: hidden;
+  &-item {
+    position: absolute;
+    top: $size-zero;
+    left: $size-zero;
+    border: $size-zero;
+    width: $size-width + 1%;
+    height: $size-width + 1%;
+  }
+}
+.btn-blog {
+  grid-column: 1/5;
+  text-align: $position;
+  padding: $size-main * 1.5 $size-main * 2 $size-main;
+}
