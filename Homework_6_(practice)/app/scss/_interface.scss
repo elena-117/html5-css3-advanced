@@ -1,0 +1,55 @@
+$size-zero: 0px;
+$size-main: 10px;
+$size-width: 100px;
+$font-main: "Titillium Web";
+$font-secondary: sans-serif;
+$color-white: #ffffff;
+$color-purple: #87509c;
+$color-turquoise: #17c2a4;
+$text-color-first: #3c4761;
+$text-color-second: #393939;
+
+body {
+   margin: $size-zero;
+   padding: $size-zero;
+   color: $color-white;
+   font-family: $font-main;
+}
+
+.grid {
+   display: grid;
+}
+
+.section {
+   padding-top: $size-width;
+   padding-bottom: $size-width * 1.2;
+}
+
+.section-inner {
+   max-width: 70%;
+   margin: 0 auto;
+   grid-template-columns: 1fr;
+   justify-items: center;
+}
+
+.button {
+   color: $color-white;
+   padding: $size-main * 2 $size-main * 8;
+   border-radius: $size-main/2;
+   box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+   font-size: $size-main * 4;
+   text-transform: uppercase;
+   letter-spacing: $size-main/5;
+   font-weight: bold;
+   line-height: 0.5;
+}
+
+.divider {
+   width: $size-width;
+   height: $size-main / 2;
+   background: rgba(0, 0, 0, 0.1);
+   margin-bottom: $size-main * 2;
+}

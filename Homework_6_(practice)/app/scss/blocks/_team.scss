@@ -1,0 +1,48 @@
+.team {
+   background-color: #e7f1f8;
+   color: $text-color-first;
+}
+
+.team-description {
+   text-align: center;
+   font-size: $size-main * 2;
+}
+
+.team-items {
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: $size-main * 4;
+   align-items: flex-start;
+   margin-top: $size-main * 8;
+}
+
+.team-item {
+   text-align: center;
+}
+
+.team-item>img {
+   width: 50%;
+}
+
+.team-item h5 {
+   text-transform: uppercase;
+   font-size: $size-main * 2;
+   font-weight: 600;
+   margin-top: $size-main * 2;
+   margin-bottom: $size-zero;
+}
+
+.team-item span {
+   color: #30bae7;
+}
+
+@media (max-width: 1200px) {
+   .team-description {
+      margin-bottom: $size-main * 4;
+   }
+
+   .team-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: $size-main * 6;
+      margin-top: $size-main * 6;
+   }
+}

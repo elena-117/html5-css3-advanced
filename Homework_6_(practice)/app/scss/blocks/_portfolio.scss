@@ -1,0 +1,70 @@
+.portfolio {
+   background-color: #ffdd99;
+   color: $text-color-second;
+}
+
+.portfolio-title {
+   font-weight: normal;
+}
+
+.portfolio-description {
+   text-align: center;
+   font-size: $size-main * 2;
+}
+
+.portfolio-nav {
+   grid-template-columns: repeat(4, 1fr);
+   margin-top: $size-main * 4;
+   text-align: center;
+}
+
+.portfolio-nav a {
+   align-self: center;
+   color: $text-color-second;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: $size-main * 1.8;
+   border-radius: $size-main / 2;
+   margin-left: $size-main / 2;
+   margin-right: $size-main / 2;
+   line-height: 2.2;
+   // padding: $size-main $size-main * 3;
+   width: $size-main * 10;
+   height: $size-main * 4;
+   background: rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-nav a:hover {
+   background-color: #ffffff;
+}
+
+.portfolio-items {
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: $size-main * 4;
+   margin-top: $size-main * 6;
+}
+
+.portfolio-item {
+   text-align: center;
+}
+
+.portfolio-items img {
+   width: 100%;
+}
+
+.portfolio-item p {
+   text-transform: uppercase;
+   font-size: $size-main * 2;
+   margin-top: $size-main * 1.5;
+}
+
+.portfolio-btn {
+   margin-top: $size-main * 6;
+}
+
+.portfolio-btn .button {
+   background-color: $color-turquoise;
+   padding: $size-main * 2 $size-main * 6;
+   text-transform: uppercase;
+   text-decoration: none;
+}

@@ -1,0 +1,53 @@
+.header {
+  background-color: $color-purple;
+  padding-top: $size-main * 4;
+  padding-bottom: $size-width * 1.5;
+}
+
+.header-inner-top {
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-logo {
+  justify-self: left;
+  margin-left: $size-main*2;
+}
+
+.header-nav {
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: right;
+  align-self: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: $color-white;
+  text-transform: uppercase;
+  padding: $size-main/2 $size-main * 1.5;
+  border-radius: $size-main/2;
+}
+
+.header-nav a:hover {
+  background-color: darken($color-purple, 10%);
+}
+
+.header-inner-bottom {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.header-slogan {
+  margin-top: $size-width * 1.5;
+  font-size: $size-main * 4;
+  text-align: center;
+}
+
+.header-btn {
+  margin-top: $size-main * 6;
+}
+
+.header-btn .button {
+  background-color: #eb7d4b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
